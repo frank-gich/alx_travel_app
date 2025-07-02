@@ -1,1 +1,19 @@
 
+# Django and Core Frameworks
+django>=4.2
+djangorestframework>=3.14
+
+# CORS for APIs
+django-cors-headers>=4.3
+
+# Swagger / OpenAPI documentation
+drf-yasg>=1.21
+
+# Asynchronous Task Queue
+celery>=5.3
+
+# (RabbitMQ is the message broker — it is not a Python package)
+# Install RabbitMQ separately via your OS or Docker.
+
+django-environ>=0.11.2
+mysqlclient>=2.2.0 
