@@ -1,6 +1,6 @@
 
 from pathlib import Path
-import environ
+# import environ
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -9,13 +9,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-m*)k8^8gy&z4^^^w(p(&+hfth(7z%adh0nzg*umsi7(6n#anr0'
-
+DEBUG = True
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
-env = environ.Env(
-    DEBUG=(bool, False)
-)
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+# DEBUG = env('DEBUG')
+# env = environ.Env(
+#     DEBUG=(bool, False)
+# )
+# environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 ALLOWED_HOSTS = []
 
@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'drf_yasg',
 
     # Your apps
-    'listings',
+    'listings'
 ]
 
 MIDDLEWARE = [
